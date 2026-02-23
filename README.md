@@ -1,91 +1,77 @@
 # Kimia Farma Performance Analytics (2020–2023)
 
 ## 📌 Project Overview
-This project analyzes the business performance of **Kimia Farma** from 2020 to 2023 as part of the **Project-Based Internship (Big Data Analytics)** program by Rakamin Academy.
 
-The objective of this project is to transform raw transactional data into meaningful business insights through data aggregation, analysis, and visualization.
+This project analyzes the business performance of Kimia Farma from 2020 to 2023 as part of the
+**Project-Based Internship (Big Data Analytics)** program by **Rakamin Academy**.
 
----
-
-## 🎯 Objectives
-- Build an analytical table by integrating multiple data sources
-- Analyze revenue, profit, transactions, and customer ratings
-- Identify top-performing provinces, branches, and product categories
-- Deliver actionable business insights through an interactive dashboard
+The objective of this project is to transform raw transactional data into meaningful business insights
+through data aggregation, SQL analysis, and interactive dashboard visualization.
 
 ---
 
-## 🗂️ Dataset
-The analysis is based on the following datasets:
+## 🛠 Tools & Technologies
 
-- `kf_final_transaction`
-- `kf_product`
-- `kf_inventory`
-- `kf_kantor_cabang`
-
-All datasets were processed and stored in **Google BigQuery**.
+* Google BigQuery (Data Processing & SQL Analysis)
+* Looker Studio (Data Visualization)
+* Google Cloud Platform
+* GitHub (Version Control & Documentation)
 
 ---
 
-## 🛠️ Tools & Technologies
-- **Google BigQuery** — Data processing & SQL analysis  
-- **Google Looker Studio** — Data visualization & dashboard  
-- **GitHub** — Version control & documentation  
+## 📂 Dataset Description
 
----
+The analysis is based on multiple datasets, including:
 
-## 🧩 Data Processing
-- Imported all datasets into BigQuery
-- Created an analytical table (`tabel_analisa`) using SQL joins and aggregations
-- Calculated key metrics such as:
-  - Net Sales
-  - Net Profit
-  - Profit Margin
-  - Transaction & Branch Ratings
+* Transaction data
+* Product master data
+* Inventory data
+* Branch and regional data
 
-All SQL scripts are available in the `/sql` directory.
+All datasets were processed and aggregated into a single analytical table
+called **`tabel_analisa`** using SQL in Google BigQuery.
 
 ---
 
 ## 📊 Dashboard
-An interactive **Performance Analytics Dashboard** was created to visualize key business metrics, including:
 
-- Revenue & profit trends (2020–2023)
-- Top provinces by transactions and net sales
-- Provinces with high branch ratings but low transaction ratings
-- Geographic distribution of profit across Indonesia
-- Top product categories by revenue
-
-🔗 **Dashboard Link:**  
+Interactive performance dashboard can be accessed here:
 https://lookerstudio.google.com/reporting/8c566588-fe23-4690-ac6f-81810579b99a
 
 ---
 
 ## 📁 Repository Structure
+
 ```
 kimia-farma-performance-analytics/
 │
 ├── README.md
 ├── sql/
-│ ├── create_table_analisa.sql
-│ ├── top10_transactions_province.sql
-│ ├── top10_nett_sales_province.sql
-│ └── top5_high_rating_low_transaction.sql
-│
-└── docs/
-└── dashboard_link.txt
+│   ├── create_table_analisa.sql
+│   ├── top10_transactions_province.sql
+│   ├── top10_nett_sales_province.sql
+│   └── top5_high_rating_low_transaction.sql
 ```
 
 ---
 
 ## 💡 Key Insights (Summary)
-- Java-based provinces contribute the highest revenue and transaction volume
-- Several provinces show high branch ratings but low transaction ratings, indicating growth opportunities
-- Certain product categories dominate revenue contribution across regions
+
+* Java-based provinces contribute the highest revenue and transaction volume
+* Several provinces show high branch ratings but low transaction ratings, indicating growth opportunities
+* Certain product categories dominate revenue contribution across regions
 
 ---
 
-## 📌 Author
-**Fania Hafidtha**  
-Big Data Analytics Intern  
-Rakamin Academy × Kimia Farma
+## 🚀 Business Recommendations
+
+* Improve transaction experience in high-rating provinces through queue optimization and staff training
+* Strengthen marketing and inventory allocation for top-performing product categories
+* Replicate best-performing provincial strategies to underperforming regions
+
+---
+
+## 👤 Author
+Fania Hafidtha<br>
+Project-Based Internship – Big Data Analytics<br>
+Rakamin Academy
